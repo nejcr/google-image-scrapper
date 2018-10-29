@@ -76,7 +76,7 @@ def download_and_store(base_directory, filename_keyword):
                 file_name = base_directory + filename_keyword + "_" + str(
                     iteration) + "_" + image.get_human_size() + "." + file_type.split(".")[-1]
                 with open(file_name, "w") as file:
-                    file.write(str(binary_file))
+                    file.write(binary_file)
 
         iteration = iteration + 1
 
